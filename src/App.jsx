@@ -29,11 +29,11 @@ function App() {
         <img src={pfpImg} alt="Profile Picture" className="pfp" />
       </div>
 
-      <div className="image-row">
-        <img src={ArFront} alt="ArFront" />
-        <img src={MlFront} alt="MlFront" />
-        <img src={CgFront} alt="CgFront" />
-      </div>
+    <div className="image-row">
+      <img src={ArFront} alt="Ar Front" />
+      <img src={MlFront} alt="Ml Front" />
+      <img src={CgFront} alt="Cg Front" />
+    </div>
 
 
 
