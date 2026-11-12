@@ -20,20 +20,28 @@ function App() {
         <p> Welcome to 12th paradox productions. We are a web comic publisher from Croatia. The site is managed and made by Luna Damjanic otherwise known as Philpa12. We started back in 2019 with old Midland’s bounty hunters animations on youtube and later we moved on to other ventures. At this moment of time we are non profit and have only had one con appearance. Here you can read about the creator’s blog and read comics, download game and get our socials!</p>
         <img src={pfpImg} alt="Profile Picture" className="pfp" />
       </div>
+<h2 className="my-5">Our Comics</h2>
+      <Row className="my-5">
+        <Col>
+          <button className="btn p-0 border-0">
+            <img className="slikaNaslovna" src={ArFront} alt="Ar Front" />
+          </button>
+        </Col>
 
-      <Row>
         <Col>
-          <img className='slikaNaslovna' src={ArFront} alt="Ar Front" />
+          <button className="btn p-0 border-0">
+            <img className="slikaNaslovna" src={MlFront} alt="Ml Front" />
+          </button>
         </Col>
+
         <Col>
-          <img className='slikaNaslovna' src={MlFront} alt="Ml Front" />
-        </Col>
-        <Col>
-          <img className='slikaNaslovna' src={CgFront} alt="Cg Front" />
+          <button className="btn p-0 border-0">
+            <img className="slikaNaslovna" src={CgFront} alt="Cg Front" />
+          </button>
         </Col>
       </Row>
 
-
+<h2>Blog</h2>
 
 
 
