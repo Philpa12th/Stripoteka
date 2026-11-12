@@ -1,9 +1,16 @@
-body{
-  background-color: black !important;
+body {
+    background: linear-gradient(to bottom, purple, black);
 }
-
 .slikaNaslovna{
   width: 100%;
+}
+
+.slikaNaslovna {
+    transition: filter 0.2s ease;
+}
+
+.slikaNaslovna:hover {
+    filter: brightness(70%);
 }
 
 .title {
@@ -62,6 +69,7 @@ h1{
     display: inline-block;
     line-height: 1.2;
     padding: 5px;
+    font-size: 150px
 }
 h2{
   font-family: "WC", sans-serif;
