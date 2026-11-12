@@ -1,21 +1,44 @@
-function App() {
-    return (
-        <>
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/comics">Midland</Link>
-                <Link to="/about">Archi</Link>
-                <Link to="/cotton">Cotton</Link>
-            </nav>
 
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/comics" element={<Midland />} />
-                <Route path="/about" element={<Archi />} />
-                <Route path="/cotton" element={<Cotton />} />
-            </Routes>
-        </>
-    );
+import 'bootstrap/dist/css/bootstrap.min.css'
+import pfpImg from './assets/pfp.png'
+import CgFront from './assets/CgFront.png'
+import ArFront from './assets/ArFront.png'
+import MlFront from './assets/MlFront.png'
+import './App.css'
+import { Col, Row } from 'react-bootstrap'
+
+function App() {
+
+  return (
+    <>
+
+
+      <div className="title">
+        <h1>12th paradox comics by Philpa12</h1>
+      </div>
+      <div className="container">
+        <p> Welcome to 12th paradox productions. We are a web comic publisher from Croatia. The site is managed and made by Luna Damjanic otherwise known as Philpa12. We started back in 2019 with old Midland’s bounty hunters animations on youtube and later we moved on to other ventures. At this moment of time we are non profit and have only had one con appearance. Here you can read about the creator’s blog and read comics, download game and get our socials!</p>
+        <img src={pfpImg} alt="Profile Picture" className="pfp" />
+      </div>
+
+      <Row>
+        <Col>
+          <img className='slikaNaslovna' src={ArFront} alt="Ar Front" />
+        </Col>
+        <Col>
+          <img className='slikaNaslovna' src={MlFront} alt="Ml Front" />
+        </Col>
+        <Col>
+          <img className='slikaNaslovna' src={CgFront} alt="Cg Front" />
+        </Col>
+      </Row>
+
+
+
+
+
+    </>
+  )
 }
 
-export default App;
+export default App
